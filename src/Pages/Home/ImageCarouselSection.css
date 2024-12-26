@@ -1,0 +1,109 @@
+
+/* Section 2 */
+/* Estilos generales (para laptops y pantallas más grandes) */
+.data-texts-container {
+    text-align: center;
+    margin: 2rem 1rem;
+  }
+  
+  .data-texts-container h3 {
+    font-weight: 650;
+    font-size: xx-large;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #000;
+    text-align: center;
+    line-height: 1.4;
+  }
+  
+  .data-texts-container p {
+    color: #000;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  
+  .data-texts-container .highlight-text {
+    color: #008cba; 
+    font-weight: bold;
+  }
+  
+  .data-texts-container .description-text {
+    color: #555;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  
+  .instant-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .device-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .device-images img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .instant-info-texts {
+    margin-top: 1rem;
+  }
+  
+  .instant-info-texts h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .instant-info-texts p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  /* Ajustes responsivos para móviles */
+  @media (max-width: 767px) {
+    .data-texts-container h3 {
+      font-size: 1.5rem;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .data-texts-container p {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 1rem;
+    }
+  
+    .instant-info-container {
+      flex-direction: column;
+      margin: 1.5rem 0;
+    }
+  
+    .device-images {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .instant-info-texts h3 {
+      font-size: 1.4rem;
+    }
+  
+    .instant-info-texts p {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+  }
+  

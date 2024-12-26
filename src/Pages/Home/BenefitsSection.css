@@ -1,0 +1,121 @@
+
+/* Section 3 */
+.benefits-section {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .benefits-title {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.573);
+    margin-bottom: 0.5rem;
+  }
+  
+  .benefits-subtitle {
+    font-size: 2rem;
+    margin-inline: 33%;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .benefit-item {
+    background-color: #2f2f2f;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 25%;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .benefit-item h3 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .benefit-item p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .benefit-icon {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    background-color: #00bcd4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .benefit-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Ajustes responsivos para móviles */
+  @media (max-width: 767px) {
+    .benefits-section {
+      padding: 2rem 1rem;
+    }
+  
+    .benefits-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+  
+    .benefits-subtitle {
+      font-size: 1.5rem;
+      margin-inline: 5%;
+    }
+  
+    .benefits-container {
+      flex-direction: column;
+      gap: 1rem;
+      margin-right: 2rem;
+    }
+  
+    .benefit-item {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .benefit-item h3 {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .benefit-item p {
+      font-size: 0.85rem;
+    }
+  
+    .benefit-icon {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
+    }
+  }

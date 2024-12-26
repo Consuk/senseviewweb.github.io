@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+  }
+  
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+  }
+  
+  .footer-logo {
+    width: 18%;
+    margin-right: 20px;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .footer-bottom {
+    text-align: left;
+  }
+  
+  .footer-social a img {
+    width: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .footer-links-mobile a {
+    display: none;
+  }
+  
+  .footer-social a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top,
+    .footer-social, .footer-links  {
+      display: none;
+    }
+  
+    .footer-links-mobile a {
+      display: inline-block; 
+      margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .footer-links-mobile a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+  
+    .footer-bottom {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  
+  
+  

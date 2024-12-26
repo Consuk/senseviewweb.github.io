@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section 1 */
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dynamic-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 60px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dynamic-container.text-hidden {
+  opacity: 0;
+}
+
+.dynamic-container.text-visible {
+  opacity: 1; 
+}
+
+.changing-text {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  background: rgba(255, 255, 255, 0.103);
+  display: flex; 
+  align-items: center;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.moving-line {
+  width: 5px;
+  height: 55px;
+  background: #00A5CF;
+  margin-left: 10px; 
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+
+.home-container {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(33, 33, 33, 0.0) 0%,
+      #212121 100%
+    ),
+    linear-gradient(
+      270deg,
+      rgba(23, 42, 79, 0.0) 0%,
+      rgba(23, 42, 79, 0.8) 100%
+    ),
+    url('/public/03-Home/Headline Image/Photo-HO-Headline.webp') lightgray 50% / cover no-repeat;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.hero-content {
+  padding: 20px;
+  margin-top: 5%;
+  margin-left: 4%;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.static-text {
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: Manrope;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Ajustes responsivos para móviles */
+@media (max-width: 767px) {
+  .home-container {
+    height: auto;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    margin-top: 10%;
+    margin-left: 0;
+    padding: 15px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .dynamic-container {
+    margin-top: 5px;
+    height: auto;
+  }
+
+  .changing-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .moving-line {
+    height: 40px;
+  }
+}

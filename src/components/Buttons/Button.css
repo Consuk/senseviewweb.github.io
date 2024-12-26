@@ -1,0 +1,30 @@
+.demo-button {
+    border-radius: 12px;
+    background: var(--palette-100-cyan-35-blue, #087AA2);
+    color: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    height: 35px;
+    width: 29%;
+    padding: 8px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .demo-button:hover {
+    background: var(--Tones-Pacific-Cyan-60, rgba(0, 165, 207, 0.60));
+  }
+  
+  .demo-button.secondary {
+    background: transparent;
+    color: #087AA2;
+    border: 2px solid #087AA2;
+  }
+  
+  .demo-button.secondary:hover {
+    background: rgba(0, 165, 207, 0.10);
+  }
+  
