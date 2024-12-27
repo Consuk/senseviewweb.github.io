@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/senseviewweb.github.io/static/css/main.c43a2acc.css",
-    "main.js": "/senseviewweb.github.io/static/js/main.94e46bbd.js",
+    "main.css": "/senseviewweb.github.io/static/css/main.95064073.css",
+    "main.js": "/senseviewweb.github.io/static/js/main.728e4ea5.js",
     "static/js/453.c93b127d.chunk.js": "/senseviewweb.github.io/static/js/453.c93b127d.chunk.js",
     "static/media/Photo-HO-Headline.webp": "/senseviewweb.github.io/static/media/Photo-HO-Headline.595552110dd4f75f5aac.webp",
     "index.html": "/senseviewweb.github.io/index.html",
-    "main.c43a2acc.css.map": "/senseviewweb.github.io/static/css/main.c43a2acc.css.map",
-    "main.94e46bbd.js.map": "/senseviewweb.github.io/static/js/main.94e46bbd.js.map",
+    "main.95064073.css.map": "/senseviewweb.github.io/static/css/main.95064073.css.map",
+    "main.728e4ea5.js.map": "/senseviewweb.github.io/static/js/main.728e4ea5.js.map",
     "453.c93b127d.chunk.js.map": "/senseviewweb.github.io/static/js/453.c93b127d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c43a2acc.css",
-    "static/js/main.94e46bbd.js"
+    "static/css/main.95064073.css",
+    "static/js/main.728e4ea5.js"
   ]
 }
