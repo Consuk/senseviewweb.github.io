@@ -15,7 +15,7 @@
     "swiper": "^11.1.15",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://github.com/Consuk/senseviewweb.github.io.git",
+  "homepage": "https://consuk.github.io/senseviewweb.github.io/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.2.0"
   }
 }
