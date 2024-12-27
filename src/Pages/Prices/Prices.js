@@ -1,7 +1,7 @@
 import React from "react";
 import "./Prices.css";
 import Button from "../../components/Buttons/Button";
-import FAQSection from "./FAQSection.js";
+import FAQSection from "../../components/FAQSection/FAQSection.js";
 import { useLanguage } from "../../LanguageContext";
 
 const Prices = () => {

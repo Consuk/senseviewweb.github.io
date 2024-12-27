@@ -97,6 +97,7 @@ const en = {
     pricesSubtitle: "By paying the monthly fee for the right solution for your business, the necessary devices are installed and you get access to the web application.",
     individualPlanTitle: "Individual Plan", 
     professionalPlanTitle: "Professional Plan", 
+    currency: "MXN", 
     pricePerVariable: "per month per measured variable",
     forOneUser: "For 1 user", 
     forThreeUsers: "For 3 users", 
@@ -115,10 +116,16 @@ const en = {
     faqTrialPeriodAnswer: "Response pending.", 
     faqContractTermQuestion: "Are there mandatory contract terms when hiring the service?",
     faqContractTermAnswer: "Yes, there is a minimum 6-month contract, and if the service is discontinued, the equipment must be returned.", 
+    data: "Data",
+    faqDataLocationQuestion: "Where is my data stored and how can I access it?",
+    faqDataLocationAnswer: "The data is stored in a third-party cloud infrastructure service that ensures the security and privacy of the information. You can download your metrics from the application in CSV format and can also request our executives to modify or delete them. All data remains your property.",
     expand: "Expand",
-    collapse: "Collapse"
-
-
+    collapse: "Collapse",
+  // FAQ&Support
+    faqSupportTitle: "How can we help you?",
+    specializedHelpTitle: "Get specialized help",
+    alignServicesTitle: "Want to know how our services align with your business?",
+    moreContactMethodsButton: "More contact methods",
   };
   
   export default en;

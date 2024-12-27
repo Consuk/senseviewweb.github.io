@@ -92,34 +92,39 @@ const es = {
     MeetingSectionCalendarPlaceholder: "[Calendario interactivo aquí]",
   // Pricing
     // Prices section
-    pricesTitleHighlight: "La solución", // "The solution" in English
-    pricesTitleRest: "a la medida", // "tailored to you" in English
-    pricesSubtitle: "Al pagar la mensualidad de la solución adecuada para su negocio se instalan los dispositivos necesarios y obtiene acceso a la aplicación web.", // "By paying the monthly fee for the right solution for your business, the necessary devices are installed and you get access to the web application." in English
-    individualPlanTitle: "Plan Individual", // "Individual Plan" in English
-    professionalPlanTitle: "Plan Profesional", // "Professional Plan" in English
-    currency: "MXN", // Keep "MXN" for both
-    pricePerVariable: "al mes por variable medida", // "per month per measured variable" in English
-    forOneUser: "Para 1 usuario", // "For 1 user" in English
-    forThreeUsers: "Para 3 usuarios", // "For 3 users" in English
-    feature: "Feature", // Keep "Feature" for both
-    pricesDisclaimer: "Sin comprar dispositivos. El costo mensual incluye el préstamo de los sensores y dispositivos.*", // "No device purchase needed. Monthly cost includes sensor and device rental.*" in English
-
+    pricesTitleHighlight: "La solución", 
+    pricesTitleRest: "a la medida",
+    pricesSubtitle: "Al pagar la mensualidad de la solución adecuada para su negocio se instalan los dispositivos necesarios y obtiene acceso a la aplicación web.",
+    individualPlanTitle: "Plan Individual",
+    professionalPlanTitle: "Plan Profesional", 
+    currency: "MXN", 
+    pricePerVariable: "al mes por variable medida", 
+    forOneUser: "Para 1 usuario", 
+    forThreeUsers: "Para 3 usuarios", 
+    feature: "Feature", 
+    pricesDisclaimer: "Sin comprar dispositivos. El costo mensual incluye el préstamo de los sensores y dispositivos.*", 
     // FAQ section
-    frequentlyAskedQuestions: "Preguntas frecuentes", // "Frequently Asked Questions" in English
-    faqEquipmentCostQuestion: "¿Qué costo tienen los equipos del sistema?", // "What is the cost of the system equipment?" in English
-    faqEquipmentCostAnswer: "El préstamo del equipo (dispositivos y sensores) viene incluido con el pago del servicio. Cuando se deja de pagar el servicio, el equipo debe ser devuelto.", // "Equipment rental (devices and sensors) is included with the service payment. When service payment stops, the equipment must be returned." in English
-    faqServiceIncludesQuestion: "¿Qué incluye el servicio?", // "What does the service include?" in English
-    faqServiceIncludesAnswer: "Respuesta pendiente.", // "Response pending." in English
-    faqConsultingQuestion: "Si no estoy seguro de qué servicios debo de incorporar a mi empresa, ¿puedo solicitar una asesoría?", // "If I'm not sure which services to incorporate into my company, can I request a consultation?" in English
-    faqConsultingAnswer: "Por supuesto, puede agendar una visita en la que podamos descubrir las áreas de mejora en su producción y recomendarle qué servicios de nuestra cartera van con sus necesidades.", // "Of course, you can schedule a visit where we can discover areas for improvement in your production and recommend which services from our portfolio match your needs." in English
-    faqTrialPeriodQuestion: "¿Ofrecen período de prueba?", // "Do you offer a trial period?" in English
-    faqTrialPeriodAnswer: "Respuesta pendiente.", // "Response pending." in English
-    faqContractTermQuestion: "¿Hay plazos de contratación obligatorios al contratar el servicio?", // "Are there mandatory contract terms when hiring the service?" in English
-    faqContractTermAnswer: "Sí, se contrata por mínimo 6 meses y si se deja el servicio se deberán regresar los equipos.", // "Yes, there is a minimum 6-month contract, and if the service is discontinued, the equipment must be returned." in English
-    expand: "Expandir", // "Expand" in English
-    collapse: "Contraer" // "Collapse" in English
-
-
+    frequentlyAskedQuestions: "Preguntas frecuentes", 
+    faqEquipmentCostQuestion: "¿Qué costo tienen los equipos del sistema?",
+    faqEquipmentCostAnswer: "El préstamo del equipo (dispositivos y sensores) viene incluido con el pago del servicio. Cuando se deja de pagar el servicio, el equipo debe ser devuelto.", 
+    faqServiceIncludesQuestion: "¿Qué incluye el servicio?", 
+    faqServiceIncludesAnswer: "Respuesta pendiente.", 
+    faqConsultingQuestion: "Si no estoy seguro de qué servicios debo de incorporar a mi empresa, ¿puedo solicitar una asesoría?", 
+    faqConsultingAnswer: "Por supuesto, puede agendar una visita en la que podamos descubrir las áreas de mejora en su producción y recomendarle qué servicios de nuestra cartera van con sus necesidades.", 
+    faqTrialPeriodQuestion: "¿Ofrecen período de prueba?", 
+    faqTrialPeriodAnswer: "Respuesta pendiente.", 
+    faqContractTermQuestion: "¿Hay plazos de contratación obligatorios al contratar el servicio?", 
+    faqContractTermAnswer: "Sí, se contrata por mínimo 6 meses y si se deja el servicio se deberán regresar los equipos.",
+    data: "Datos",
+    faqDataLocationQuestion: "¿Dónde están mis datos y cómo puedo acceder a ellos?",
+    faqDataLocationAnswer: "Los datos se almacenan en un servicio de infraestructura en la nube de terceros que asegura la seguridad y privacidad de la información. Usted puede descargar sus métricas desde la aplicación en formato CSV y también puede solicitar a nuestros ejecutivos la modificación o eliminación de los mismos. Todos los datos son de su propiedad.", 
+    expand: "Expandir", 
+    collapse: "Contraer",
+  // FAQnSupport
+    faqSupportTitle: "¿Cómo podemos ayudarle?",
+    specializedHelpTitle: "Obtenga ayuda especializada",
+    alignServicesTitle: "¿Quiere saber cómo se alinean nuestros servicios a su negocio?",
+    moreContactMethodsButton: "Más medios de contacto",
   };
   
   export default es;

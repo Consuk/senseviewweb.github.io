@@ -9,7 +9,8 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/senseviewweb.github.io">
+    <BrowserRouter basename={process.env.NODE_ENV === "production" ? "/senseviewweb.github.io" : ""}>
+    
       <LanguageProvider>
         <App />
       </LanguageProvider>

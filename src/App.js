@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/home";
 import Prices from "./Pages/Prices/Prices.js";
+import Faq from "./Pages/FAQ&Support/FAQnSupport.js"
 import "./App.css";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Prices />} />
-          <Route path="/faq" element={<div>Preguntas Frecuentes</div>} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/contact" element={<div>Contacto</div>} />
           <Route path="/about" element={<div>Sobre Nosotros</div>} />
         </Routes>
