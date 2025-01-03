@@ -52,7 +52,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/"><img src="${process.env.PUBLIC_URL}/01-NavBar/Original.svg" alt="Sense View Logo" /></Link>
+        <Link to="/"><img src="/01-NavBar/Original.svg" alt="Sense View Logo" /></Link>
       </div>
       <div className={`navbar-links ${isMenuOpen || !isMobile ? "open" : ""}`}>
         <ul className="navbar-menu">
@@ -76,8 +76,8 @@ function Navbar() {
         isOpen={isLanguageDropdownOpen}
         toggleLanguageDropdown={toggleLanguageDropdown}
         languages={[
-          { label: t("spanish"), icon: "${process.env.PUBLIC_URL}/01-NavBar/language_spanish.png", code: "es" },
-          { label: t("english"), icon: "${process.env.PUBLIC_URL}/01-NavBar/language_us.png", code: "en" },
+          { label: t("spanish"), icon: "/01-NavBar/language_spanish.png", code: "es" },
+          { label: t("english"), icon: "/01-NavBar/language_us.png", code: "en" },
         ]}
       />
       <NavbarToggle onClick={toggleMenu} isOpen={isMenuOpen} />

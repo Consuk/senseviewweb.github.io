@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home/home";
 import Prices from "./Pages/Prices/Prices.js";
 import Faq from "./Pages/FAQ&Support/FAQnSupport.js"
+import Contact from "./Pages/Contact/Contact.js";
 import "./App.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Prices />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/contact" element={<div>Contacto</div>} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<div>Sobre Nosotros</div>} />
         </Routes>
       </div>

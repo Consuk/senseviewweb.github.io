@@ -126,6 +126,26 @@ const en = {
     specializedHelpTitle: "Get specialized help",
     alignServicesTitle: "Want to know how our services align with your business?",
     moreContactMethodsButton: "More contact methods",
+  // Contact Us
+    contactTitle: "We are ready to talk.",
+    contactDescription: "At Sense View, we are committed to helping you achieve your production goals. Contact us today to learn more about our tailored solutions.",
+    contactExtraSectionTitle: "One step away from ",
+    contactExtraSectionTitle2: "transforming your business.",
+    contactExtraSectionDescription: "Connect with our experts and discover how we can help you achieve your production goals.",
+    // form
+    contactFormTitle: "Let's talk about growth.",
+    contactFormDescription:
+      "Fill out the form below to get in touch with our team of experts. We'll get back to you as soon as possible.",
+    firstName: "First name",
+    lastName: "Last name",
+    email: "Email*",
+    phone: "Phone number",
+    company: "Company",
+    state: "State",
+    city: "City",
+    message: "Message",
+    send: "Send",
+
   };
   
   export default en;

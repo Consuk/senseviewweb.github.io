@@ -125,6 +125,27 @@ const es = {
     specializedHelpTitle: "Obtenga ayuda especializada",
     alignServicesTitle: "¿Quiere saber cómo se alinean nuestros servicios a su negocio?",
     moreContactMethodsButton: "Más medios de contacto",
+  // Contact Us
+    contactTitle: "Estamos listos para hablar.",
+    contactDescription:
+      "En Sense View estamos comprometidos a ayudarte a alcanzar tus objetivos de producción. Contáctanos hoy mismo para obtener más información sobre nuestras soluciones a la medida.",
+    contactExtraSectionTitle: "A un paso de transformar ",
+    contactExtraSectionTitle2: "transformar su negocio.",
+    contactExtraSectionDescription:
+      "Conecte con nuestros expertos y descubra cómo podemos ayudarle a alcanzar sus objetivos de producción.",
+    // form
+    contactFormTitle: "Hablemos de crecer.",
+    contactFormDescription:
+      "Complete el siguiente formulario para ponerse en contacto con nuestro equipo de expertos. Le responderemos a la brevedad posible.",
+    firstName: "Nombre",
+    lastName: "Apellidos",
+    email: "Correo electrónico*",
+    phone: "Número de teléfono",
+    company: "Empresa",
+    state: "Estado",
+    city: "Ciudad",
+    message: "Mensaje",
+    send: "Enviar",
   };
   
   export default es;
