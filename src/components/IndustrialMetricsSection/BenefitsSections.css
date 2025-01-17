@@ -1,0 +1,176 @@
+/* --- Estilos generales --- */
+.benefits-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Títulos */
+.benefits-section h4 {
+  font-size: 1rem;
+  color: #888;
+}
+
+.benefits-section h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0.5rem 0 2rem;
+}
+
+.benefits-section p{
+  font-weight: 100;
+  color: #888;
+}
+
+/* --- Estilos para la variante 'default' --- */
+.benefits-section.default {
+  text-align: center;
+  justify-content: center;
+
+}
+
+.benefits-container.default {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-left: 15%;
+}
+
+.benefit-card.default {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  position: relative;
+  overflow: visible;
+  width: 80%;
+}
+
+.benefit-icon-container.default {
+  position: absolute;
+  left: -90px; /* Icono sobresale del borde izquierdo */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0, 166, 207, 0.979); /* Círculo celeste */
+  border-radius: 50%;
+  border: 8px solid #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-icon.default {
+  width: fit-content;
+  height: fit-content;
+}
+
+.benefit-text-container.default {
+  flex: 1;
+  text-align: left;
+  padding-left: 60px;
+}
+
+/* --- Estilos para la variante 'alternative' --- */
+.benefits-section.alternative {
+  display: flex;
+  flex-direction: row; /* Título a la izquierda, tarjetas a la derecha */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.benefits-section.alternative h4 {
+  margin-top: 35%;
+  text-align: left; /* Alinear título y subtítulo a la izquierda */
+}
+
+.benefits-container.alternative {
+  display: flex;
+  flex-direction: column; /* Tarjetas en una columna */
+  gap: 1rem;
+  margin-right: 5%;
+}
+
+.benefit-card.alternative {
+  display: flex;
+  justify-content: space-between; /* Texto a la izquierda, icono a la derecha */
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1% 5%;
+  position: relative;
+  width: 80%;
+}
+
+.benefit-text-container.alternative {
+  flex: 1;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.benefit-icon-container.alternative {
+  position: absolute;
+  right: -60px; /* Icono sobresale del borde izquierdo */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0, 166, 207, 0.979); /* Círculo celeste */
+  border-radius: 50%;
+  border: 8px solid #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-icon.alternative {
+  width: fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .benefits-section.alternative {
+    flex-direction: column; /* Apilar contenido */
+    align-items: center;
+  }
+
+  .benefits-container.alternative {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .benefit-card.alternative {
+    flex-direction: column; /* Apilar icono y texto */
+    align-items: center;
+    width: 90%;
+  }
+
+  .benefit-icon-container.alternative {
+    display: none;
+  }  
+
+  .benefit-text-container.alternative {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .benefit-card.default {
+    flex-direction: column; /* Apilar contenido */
+    align-items: center;
+    width: 100%;
+  }
+
+  .benefit-icon-container.default {
+    display: none;
+  } 
+
+
+  .benefits-container.default {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0;
+  }
+}

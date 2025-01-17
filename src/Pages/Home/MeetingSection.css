@@ -1,5 +1,5 @@
 /* Section 6 */
-.meeting-section {
+.meeting-section-home {
     display: flex;
     gap: 2rem;
     padding: 2rem;
@@ -7,15 +7,14 @@
     border-radius: 12px;
   }
   
-  .meeting-info {
+  .meeting-info-home {
     flex: 1;
-    display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
   }
   
-  .meeting-info h2 {
+  .meeting-info-home h2 {
     font-size: 1.8rem;
     font-weight: bold;
     color: #000;

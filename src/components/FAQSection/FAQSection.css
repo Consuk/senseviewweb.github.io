@@ -1,6 +1,6 @@
 .faq-section {
   font-family: 'Manrope', sans-serif;
-  margin: 50px auto;
+  margin: 0 auto;
   max-width: 800px;
   padding: 0 20px;
   color: #000000;
@@ -8,9 +8,9 @@
 
 .faq-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .faq-category {

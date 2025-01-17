@@ -1,33 +1,33 @@
 
 /* Section 3 */
-.benefits-section {
+.benefits-section-home {
     background-color: #1c1c1c;
     color: #fff;
     text-align: center;
     padding: 3rem 2rem;
   }
   
-  .benefits-title {
+  .benefits-title-home {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.573);
     margin-bottom: 0.5rem;
   }
   
-  .benefits-subtitle {
+  .benefits-subtitle-home {
     font-size: 2rem;
     margin-inline: 33%;
     font-weight: 600;
     margin-bottom: 2rem;
   }
   
-  .benefits-container {
+  .benefits-container-home {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem;
   }
   
-  .benefit-item {
+  .benefit-item-home {
     background-color: #2f2f2f;
     border-radius: 8px;
     padding: 1.5rem;
@@ -37,19 +37,19 @@
     transition: transform 0.3s ease;
   }
   
-  .benefit-item h3 {
+  .benefit-item-home h3 {
     font-size: 1.1rem;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
     color: #fff;
   }
   
-  .benefit-item p {
+  .benefit-item-home p {
     font-size: 0.9rem;
     color: #ccc;
   }
   
-  .benefit-icon {
+  .benefit-icon-home {
     position: absolute;
     top: -20px;
     left: -20px;
@@ -64,54 +64,54 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
   
-  .benefit-icon img {
+  .benefit-icon-home img {
     width: 24px;
     height: 24px;
   }
   
-  .benefit-item:hover {
+  .benefit-item-home:hover {
     transform: translateY(-8px);
   }
   
   /* Ajustes responsivos para móviles */
   @media (max-width: 767px) {
-    .benefits-section {
+    .benefits-section-home {
       padding: 2rem 1rem;
     }
   
-    .benefits-title {
+    .benefits-title-home {
       font-size: 1.2rem;
       margin-bottom: 0.8rem;
     }
   
-    .benefits-subtitle {
+    .benefits-subtitle-home {
       font-size: 1.5rem;
       margin-inline: 5%;
     }
   
-    .benefits-container {
+    .benefits-container-home {
       flex-direction: column;
       gap: 1rem;
       margin-right: 2rem;
     }
   
-    .benefit-item {
+    .benefit-item-home {
       width: 100%;
       text-align: center;
       padding: 1rem;
     }
   
-    .benefit-item h3 {
+    .benefit-item-home h3 {
       font-size: 1rem;
       margin-top: 1rem;
       margin-bottom: 0.5rem;
     }
   
-    .benefit-item p {
+    .benefit-item-home p {
       font-size: 0.85rem;
     }
   
-    .benefit-icon {
+    .benefit-icon-home {
       position: relative;
       top: 0;
       left: 0;

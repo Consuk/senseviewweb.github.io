@@ -39,13 +39,13 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <div className="benefits-section">
-      <p className="benefits-title">{t("BenefitsSectionTitle")}</p>
-      <p className="benefits-subtitle">{t("BenefitsSectionSubtitle")}</p>
-      <div className="benefits-container">
+    <div className="benefits-section-home">
+      <p className="benefits-title-home">{t("BenefitsSectionTitle")}</p>
+      <p className="benefits-subtitle-home">{t("BenefitsSectionSubtitle")}</p>
+      <div className="benefits-container-home">
         {benefits.map((benefit, index) => (
-          <div className="benefit-item" key={index}>
-            <div className="benefit-icon">
+          <div className="benefit-item-home" key={index}>
+            <div className="benefit-icon-home">
               <img src={`03-Home/Icons/${benefit.icon}`} alt={benefit.title} />
             </div>
             <h3>{benefit.title}</h3>

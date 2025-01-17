@@ -7,8 +7,8 @@ const MeetingSection = () => {
   const { t } = useLanguage(); // traslate
 
   return (
-    <div className="meeting-section">
-      <div className="meeting-info">
+    <div className="meeting-section-home">
+      <div className="meeting-info-home">
         <h2>
           {t("MeetingSectionTitle")} <span className="highlight-text">Sense View.</span>
         </h2>

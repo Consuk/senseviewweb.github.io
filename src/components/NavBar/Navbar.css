@@ -30,6 +30,10 @@ body {
     align-items: center;
   }
   
+  .navbar-menu li.active a {
+    font-weight: bold;
+  }
+  
   .navbar-menu {
     display: flex;
     list-style: none;
@@ -125,8 +129,9 @@ body {
   }
   
   .solutions-dropdown li {
-    padding: 8px 16px;
-    font-size: 0.9em; 
+    display: flex;
+    padding: 10px 16px;
+    font-size: 0.9rem; 
     display: flex;
     align-items: center;
     gap: 10px; 
@@ -144,6 +149,12 @@ body {
     padding-bottom: 8px; 
     margin-bottom: 8px; 
   }
+
+  .solutions-dropdown li img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px;
+  }  
   
   .solutions-dropdown .additional-margin:not(:last-child) {
     padding-left: 20px; 

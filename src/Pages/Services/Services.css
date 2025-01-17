@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');
+
+.services-page {
+  font-family: 'Manrope', sans-serif;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), #ffffff),
+    url("/public/05-Services/Headline Image/Image_Production03.webp") no-repeat
+      center center;
+  background-size: cover;
+  padding: 0 2%;
+}
+
+.services-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 7%;
+}
+
+.services-content {
+  flex: 1;
+}
+
+.services-cards-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.services-content h1 {
+  font-size: 4rem;
+  font-weight: 650;
+  margin-bottom: 20px;
+}
+
+.services-content p {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-bottom: 30px;
+  margin-right: 20%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%; /* Reducimos el ancho */
+  max-width: 450px; /* Limitamos el tamaño máximo */
+  margin: 0 auto; /* Centra horizontalmente el card */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 166, 207, 0.824);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.card-title {
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #dddddd3c;
+  border: 1px  #dddddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-image {
+  width: 120px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+.solutions-section {
+  padding: 0 20px;
+}
+
+.solutions-section .section-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.solutions-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 2%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .services-hero {
+    flex-direction: column; /* Apilar el contenido en pantallas pequeñas */
+    gap: 20px;
+  }
+
+  .services-content h1 {
+    font-size: 3rem; /* Reducir el tamaño del título */
+  }
+
+  .services-content p {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+    margin-right: 0; /* Eliminar margen lateral */
+  }
+
+  .card {
+    max-width: 100%; /* Hacer que los cards usen todo el ancho */
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr; /* Mostrar una columna en pantallas pequeñas */
+  }
+
+  .solutions-section h1 {
+    font-size: 2rem; /* Reducir el tamaño del título en esta sección */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-content h1 {
+    font-size: 2rem; /* Reducir aún más el tamaño del título */
+  }
+
+  .services-content p {
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+  }
+
+  .card-body {
+    flex-direction: column; /* Alinear contenido en columnas para pantallas muy pequeñas */
+    gap: 10px;
+  }
+
+  .card-title {
+    font-size: 1.1rem; /* Reducir tamaño del título de los cards */
+  }
+}

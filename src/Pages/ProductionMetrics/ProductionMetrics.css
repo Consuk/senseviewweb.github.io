@@ -1,0 +1,83 @@
+  .industrial-variables-container {
+    background: 
+      linear-gradient(
+        to top,
+        rgba(33, 33, 33, 1), /* Fondo negro intenso en la parte inferior */
+        rgba(33, 33, 33, 0.8),
+        rgba(23, 42, 79, 0.5) 100% /* Más claro hacia la parte superior */
+      ),
+      url('/public/07-Service02/Headline Image/Métricas.webp') no-repeat center/cover;
+  }
+
+  .metrics{
+    background-color: rgba(33, 33, 33, 1);
+    padding: 10px 0;
+  }
+
+  .metrics-s2 {
+    padding: 0; /* Elimina padding innecesario */
+    margin: 0 auto; /* Centra el contenedor sin márgenes adicionales */
+  }
+
+  .metrics-s2 h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #00a5cf;
+    text-align: center;
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
+
+  .metrics-s2 h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px 0; /* Reduce márgenes superior e inferior */
+  }
+
+  .metrics-s2 p {
+    font-weight: 500;
+    color: #d1d1d1;
+    text-align: center;
+    margin-top: 5px; /* Ajusta el margen superior */
+    margin-bottom: -3%;
+    line-height: 0; /* Controla el espacio entre líneas */
+  }
+
+  .metrics-s2 h3,
+  .metrics-s2 p {
+    line-height: 1.2; /* Reduce el espacio entre líneas */
+  }
+
+  .metrics-p-section{
+    font-weight: 500;
+    color: #d1d1d1;
+    text-align: center; 
+    margin: 0 20%;
+    padding-bottom: 2%;  
+  }
+
+  /* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .metrics {
+    padding: 20px 10px; /* Reduce el espaciado en pantallas pequeñas */
+  }
+
+  .metrics-s2 h2 {
+    font-size: 2rem; /* Reduce aún más el tamaño del título */
+  }
+
+  .metrics-s2 h3 {
+    font-size: 1.8rem; /* Reduce el subtítulo */
+  }
+
+  .metrics-s2 p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+    line-height: 1.4; /* Ajusta el interlineado */
+  }
+
+  .metrics-p-section {
+    margin: 0 10%; /* Más compacto */
+    padding-bottom: 5%;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Dropdown({ isOpen, toggleDropdown, label, items, isMenuOpen }) {
   return (
@@ -22,9 +23,12 @@ function Dropdown({ isOpen, toggleDropdown, label, items, isMenuOpen }) {
               className={`${
                 item.isIndented ? "additional-margin" : "bold-on-hover"
               }`}
+              onClick={toggleDropdown}
             >
-              <img src={item.icon} alt={item.label} />
-              {item.label}
+              <Link to={item.path}>
+                <img src={item.icon} alt={item.label} />
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>

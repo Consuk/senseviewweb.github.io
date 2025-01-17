@@ -145,7 +145,239 @@ const en = {
     city: "City",
     message: "Message",
     send: "Send",
+  // About us
+    aboutUsHeroTitle: "Your ally,",
+    aboutUsHeroHighlight: "Sense View.",
+    aboutUsHeroDescription: "We strongly believe that the implementation of technologies such as Industrial Internet of Things (IIoT) and data science in production lines is key to achieving sustainable growth.",
+    aboutUsFeatures: [
+      { alt: "emoji_objects", text: "Adaptability" },
+      { alt: "tune", text: "Innovation" },
+      { alt: "volunteer_activism", text: "Passion" },
+      { alt: "workspace_premium", text: "Quality" },
+      { alt: "groups", text: "Customer Orientation" }
+    ],
+    
+    missionTitle: "Our mission.",
+    missionDescription:
+      "Lead the digital transformation in small and medium-sized enterprises by measuring and visually representing their processes. Our goal is to improve operational efficiency, enabling companies to make informed decisions that guide them towards sustainable growth.",
+    commitmentTitle: "Our commitment.",
+    commitmentDescription:
+      "We are a committed partner to accompany Mexican companies in their transition to Industry 4.0. We offer tailored solutions for data acquisition and visualization, allowing organizations to make strategic decisions based on accurate and up-to-date information.",
+    ctaText: "Together, we build the future of the industry in Mexico.",
+    ctaButton: "Contact",
+    ctaImageAlt: "Factory",
+    missionImageAlt: "Our mission",
+    commitmentImageAlt: "Our commitment",
+  // Service
+    
+    Hw: "Services",
+    heroTitle: "Digitalize your production.",
+    heroDescription:
+      "We offer innovative technological solutions to optimize your industrial processes and facilitate decision-making.",
+    scheduleDemoButton: "Schedule demo",
+    variablesCardtitle: "Industrial Variables",
+    variablesCardbuttonText: "Learn more",
+    variablesCarddescription:
+      "Accurately monitor production variables to maintain product quality and reduce costs.",
+  
+ 
+    metricsCardtitle: "Production Metrics",
+    metricsCardbuttonText: "Learn more",
+    metricsCarddescription:
+      "Measure the overall efficiency of your equipment (OEE) for strategic, data-driven decisions.",
+  
+    solutionsLabel: "Solutions",
+    solutionsTitle: "Discover more.",
+    proteoTitle: "Proteo, the modular device",
+    proteoDescription:
+      "Discover how Proteo integrates into your industrial processes.",
+    proteoButton: "Devices",
+    dataTitle: "From data to valuable information",
+    dataDescription: "Interactive graphs, alerts, filters, and more.",
+    dataButton: "Data and metrics",
+  // Industrial Varaibles    
+    // Industrial Variables Page
+    industrialVariablesDescription: "A precise and easy-to-use industrial variable measurement system that allows you to optimize operations, reduce costs, and improve profitability.",
+    description: "Description",
+    dataToPowerHighlight: "From data to power:",
+    dataToPowerSubtitle: "Turn information into decisions.",
+    dataToPowerDescription: "Access the web application from your phone or computer to obtain exact measurements of multiple variables in your production processes, and receive important alerts, interactive graphs, and clear reports. By having precise control over various variables, you can adjust your production and distribution processes more efficiently.",
+    
+    // Monitoring Section
+    monitoringTitle: "Monitoring variables like:",
+    temperatureAndHumidity: "Temperature & Humidity",
+    temperatureAndHumidityDesc: "Keep your processes in optimal conditions and prevent damage, ensuring the quality and stability of your products.",
+    flow: "Flow",
+    flowDesc: "Optimize resource use by ensuring each process stage receives the exact amount of inputs, reducing waste.",
+    level: "Level",
+    levelDesc: "Avoid production interruptions and maintain a constant supply by monitoring the liquid or material level in your tanks.",
+    pressure: "Pressure",
+    pressureDesc: "By measuring pressure, ensure the safety of your plant, stabilize systems, and prevent operational failures.",
+    gps: "GPS",
+    gpsDesc: "Optimize asset management. Monitor the location and performance of your vehicles and equipment, improving logistics.",
+    energyConsumption: "Energy Consumption",
+    energyConsumptionDesc: "Reduce costs and increase sustainability by identifying high-consumption areas, contributing to more efficient and responsible operations.",
+    
+    // Features
+    wasteDetection: "Early detection of waste",
+    wasteDetectionAlt: "Waste Detection",
+    materialsControl: "Control of materials and meticulous records",
+    materialsControlAlt: "Materials Control",
+    leakDetection: "Identification of possible leaks",
+    leakDetectionAlt: "Leak Detection",
+    // Characteristics
+    characteristicsTitle: "This is how we optimize your business.",
+    whatWeInstall: "What we install",
+    sensorsTitle: "Non-invasive sensors",
+    sensorsDescription: "Sensors suitable for the measurements you want to collect and visualize.",
+    proteoTitleCharacteristics: "Proteo",
+    proteoDescriptionCharacteristics: "Modular data acquisition and communication device.",
+    ledScreenTitle: "LED screen",
+    ledScreenDescription: "Real-time data for the production area.",
+    features: "Features",
+    wirelessCommunicationTitle: "Wireless communication",
+    wirelessCommunicationDescription: "Greater flexibility and ease of installation.",
+    automaticStorageTitle: "Automatic storage",
+    automaticStorageDescription: "Secure and accessible cloud records.",
+    appIntegrationTitle: "Integration with other applications",
+    appIntegrationDescription: "Data export to existing systems.",
+    digitalControlBoardTitle: "Digital control board",
+    digitalControlBoardDescription: "Customizable dashboard for acquired data and metrics.",
+    moreInfoButton: "More information about Devices",
+    // Software
+    softwareHeaderTitle: "Software",
+    softwareHeaderSubtitle: "From sensors to the digital dashboard.",
+    softwareHeaderDescription:
+      "In the web or mobile app, access measurements and visualize them instantly.",
+    softwareContentTitle1: "Interactive graphs, filters, and more",
+    softwareContentDescription1:
+      "Monitor the status of your industrial processes in real-time and with precision: know the temperature of your furnaces, or the level of your tanks, from your control panel.",
+    softwareContentTitle2: "Important alerts",
+    softwareContentDescription2:
+      "Receive alerts about variables that exceed the operational limits in your processes and act immediately.",
+    softwareFooterTitle1: "Findings to grow",
+    softwareFooterDescription1:
+      "Share data with your colleagues to improve collaboration.",
+    softwareFooterTitle2: "Accurate and organized digital records",
+    softwareFooterDescription2:
+      "Access your historical records at any time for analysis, reports, and audits.",
+    softwareFooterButton: "More information about Data and Metrics",
+    // Benefits
+    benefitsTitle: "Benefits",
+    benefitsSubtitle: "Achieve your goals.",
+    benefits: [
+      {
+        title: "Informed decision-making",
+        description: "Receive notifications and alerts based on precise measurements.",
+        icon: "/06-Service01/Icons/inventory.svg",
+      },
+      {
+        title: "Cost reduction",
+        description: "Avoid losses of production inputs and protect the environment.",
+        icon: "/06-Service01/Icons/precision_manufacturing.svg",
+      },
+      {
+        title: "Easy maintenance",
+        description: "Get failure forecasts and maximize the useful life of your equipment.",
+        icon: "/06-Service01/Icons/savings.svg",
+      },
+      {
+        title: "Product consistency",
+        description: "Maintain quality by keeping production variables at their ideal values.",
+        icon: "/06-Service01/Icons/conveyor_belt.svg",
+      },
+      ],
+      alternativeBenefits: [
+        {
+          title: "Quality improvement",
+          description: "Reduce defects and improve product consistency.",
+          icon: "/07-Service02/Icons/task_alt.svg",
 
+        },
+        {
+          title: "Reduced downtime",
+          description: "Identify and solve problems in a timely manner.",
+          icon: "/07-Service02/Icons/hourglass_disabled_big.svg",
+
+        },
+        {
+          title: "Strategic decision-making",
+          description: "Based on accurate and up-to-date data.",
+          icon: "/07-Service02/Icons/inventory.svg",
+        },
+        {
+          title: "Increased productivity",
+          description: "Optimize the performance of your production line.",
+          icon: "/07-Service02/Icons/conveyor_belt.svg",
+
+        },
+      ],
+      // Navbar
+      navbarTitle: "Industrial Variables",
+      scheduleDemo: "Schedule demo",
+      characteristics: "Characteristics",
+      software: "Software",
+      benefitsNavbar: "Benefits",
+    // Production Metrics
+      introDescription:
+        "Increase productivity, reduce downtime, and improve product quality with our advanced monitoring and data analysis system.",
+      kpiTitle: "KPIs at your service:",
+      kpiSubtitle: "Monitor key metrics.",
+      kpiDescription:
+        "Access the web application from your phone or computer to get key insights about the performance of your production lines.",
+      monitoringIntro:
+        "Take full control of your production with our intuitive monitoring system. With just a few clicks, you'll have access to real-time data, interactive graphs, and clear reports. Visualize key metrics, identify trends, and make informed decisions to improve your business efficiency.",
+      monitoringItems_0_title: "OEE (Overall Equipment Efficiency)",
+      monitoringItems_0_description: "Maximize your company's production by measuring OEE. Identify where to reduce costs and improve quality.",
+      monitoringItems_1_title: "Productivity / Performance",
+      monitoringItems_1_description: "Increase production without increasing costs. Identify areas of improvement in your processes to achieve greater results.",
+      monitoringItems_2_title: "Transition Time",
+      monitoringItems_2_description: "Minimize transition times between processes and significantly increase productivity.",
+      monitoringItems_3_title: "Downtime Rate and Time",
+      monitoringItems_3_description: "Increase the productive time of your equipment to avoid unnecessary losses.",
+      monitoringItems_4_title: "Demand Forecasting",
+      monitoringItems_4_description: "Anticipate demand and optimize operations. Adjust your production to market needs, avoiding inventory issues.",
+      monitoringItems_5_title: "Line Downtime Frequency",
+      monitoringItems_5_description: "Identify the root causes of downtimes and take corrective actions. Improve the reliability of your equipment and reduce maintenance costs.",
+    // How it works
+      sectionLabelHW: "How it works",
+      titleHW: "Start improving your operational efficiency.",
+      descriptionHW: "We design unique solutions tailored to your industrial processes.",
+      steps: [
+        {
+          title: "Assessment: In-depth diagnosis",
+          subtitle: "On-site visit for analysis of industrial processes",
+          description:
+            "Our team of experts conducts a thorough analysis of your current industrial processes. From the production line to the specific goals you want to achieve, we identify key areas where our solution can have the greatest impact and optimization.",
+        },
+        {
+          title: "Selection: Strategic decision",
+          subtitle: "Analysis and selection of variables to measure",
+          description:
+            "Once you understand the different options and their benefits, it's time to make a decision. Our team will be available to answer any questions and help you choose the solution that best aligns with your goals and budget.",
+        },
+        {
+          title: "Installation: Solution implementation",
+          subtitle: "Installation of selected equipment, software configuration, and training",
+          description:
+            "Our team of experts handles the entire installation process, from hardware configuration to software setup. We ensure everything runs optimally and without interruptions to your production.",
+        },
+        {
+          title: "Access: Real-time data window",
+          subtitle: "Creation of authorized users for software usage",
+          description:
+            "After installation, you'll have access to your custom dashboard within the web and mobile application. This is your exclusive portal to view all production data in real time.",
+        },
+        {
+          title: "Analysis: Turning data into value",
+          subtitle: "Metrics visualization and dashboard management",
+          description:
+            "With our dashboard, you can easily analyze data and gain valuable insights to make informed decisions.",
+        },
+      ],
+      ctaTitleHW: "Transform your plant into a smart factory",
+      ctaDescriptionHW: "Connect with our experts and discover how we can help you achieve your production goals.",
+      ctaImageAltHW: "Smart Factory",
   };
   
   export default en;

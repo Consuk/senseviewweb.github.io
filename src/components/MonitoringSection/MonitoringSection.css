@@ -1,0 +1,118 @@
+.monitoring-section {
+  padding: 5% 60px;
+  background: rgba(33, 33, 33, 255);
+  text-align: center;
+  color: white;
+}
+
+.monitoring-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 15px; /* Espaciado uniforme */
+  max-width: 70%;
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+.monitoring-item {
+  position: relative;
+  background: #333333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 150px; /* Altura fija */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.monitoring-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.icon-container p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white; /* Título en blanco por defecto */
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+
+.monitoring-item:hover .icon-container p {
+  color: #00a5cf; /* Cambia a azul al pasar el cursor */
+}
+
+.content-monitoring {
+  opacity: 0; /* Oculto por defecto */
+  max-height: 0; /* Sin ocupar espacio */
+  overflow: hidden; /* Ocultar contenido excedente */
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.monitoring-item:hover .content-monitoring {
+  opacity: 1; /* Muestra la descripción */
+  min-height: 230px; /* Altura suficiente para mostrar el contenido */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.title-monitoring {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00a5cf; /* Azul solo visible al hacer hover */
+  margin-top: 10px;
+}
+
+.description-monitoring {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+  .monitoring-grid {
+    grid-template-columns: 1fr; /* Una sola columna */
+    max-width: 90%;
+    
+  }
+  .monitoring-item:hover .content-monitoring {
+    opacity: 1; /* Muestra la descripción */
+    min-height: 310px; /* Altura suficiente para mostrar el contenido */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title-monitoring {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00a5cf; /* Azul solo visible al hacer hover */
+  }
+  
+  .description-monitoring {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-top: 1px;
+    text-align: center;
+  }
+  
+}
+

@@ -1,0 +1,373 @@
+.hw-body{
+  background: #f2f2f2;
+  padding: 1% 0;
+}
+
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  padding: 40px;
+  min-height: 50vh;
+  background: linear-gradient(
+      to top,
+      rgba(33, 33, 33, 1),
+      rgba(33, 33, 33, 0.8),
+      rgba(23, 42, 79, 0.676) 100%
+    ),
+    url('/public/04-How It Works/Headline Image/Image_Production01.webp') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.hw-section-label {
+  margin-top: 5%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666666;
+}
+
+.how-it-works-content {
+  margin-top: 15px;
+  max-width: 600px;
+  z-index: 2;
+  position: relative;
+}
+
+.how-it-works-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.how-it-works-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #ababab;
+}
+
+/* Section 2 */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2% 10%;
+}
+
+/* Línea entre los círculos */
+.timeline-circle::after {
+  content: "";
+  position: absolute;
+  bottom: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: calc(100% + 126px);
+  background-color: #ddd;
+  z-index: -1;
+  transition: background-color 0.3s ease; /* Transición para el color */
+}
+
+/* Estilo de los círculos */
+.timeline-circle {
+  margin-right: 2%;
+  width: 150px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: 4px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.timeline-circle span {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Resaltar el círculo actual */
+.timeline-circle.hovered {
+  background-color: #00a5cf;
+  border-color: #00a5cf;
+}
+
+.timeline-circle.hovered span {
+  opacity: 1;
+  color: white;
+}
+
+/* Resaltar la línea y el círculo del paso anterior */
+.timeline-circle.connected::after {
+  background-color: #00a5cf; /* Línea azul celeste */
+}
+
+/* Mostrar el número dentro del círculo conectado */
+.timeline-circle.connected span {
+  opacity: 1;
+  color: white;
+}
+
+/* Configuración de los cards */
+.step-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.step-content {
+  display: flex;
+  align-items: center; /* Asegura que la imagen y los textos estén alineados verticalmente */
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* El card ocupa todo el ancho disponible */
+  gap: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.step-content img {
+  width: 120px; /* Ajusta el tamaño de la imagen */
+  height: 120px; /* Ajusta el tamaño de la imagen */
+  border-radius: 10px;
+  object-fit: cover; /* Mantiene la relación de aspecto */
+}
+
+.step-content-text {
+  flex: 1; /* El texto ocupa el espacio restante en el card */
+}
+
+.step-content-text h2 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.step-content-text h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.step-content-text p {
+  font-size: 1rem;
+  color: #777;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.step-content img{
+  width: 300px;
+  height: fit-content;
+}
+
+.step-item:last-child .timeline-circle::after {
+  display: none;
+}
+
+/* Línea y círculo completados */
+.timeline-circle.completed {
+  background-color: #00a5cf;
+  border-color: #00a5cf;
+}
+
+.timeline-circle.completed span {
+  opacity: 1;
+  color: white;
+}
+
+.timeline-circle.completed::after {
+  background-color: #00a5cf;
+}
+
+/* Línea conectada */
+.timeline-circle.connected::after {
+  background-color: #00a5cf;
+}
+
+/* Mantiene los números visibles en círculos conectados */
+.timeline-circle.connected span {
+  opacity: 1;
+  color: white;
+}
+
+/* section 3 */
+.hw-call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 16px;
+  width: 81%;
+  height: 260px;
+  margin-left: 10%;
+  overflow: hidden;
+  background: linear-gradient(
+      to left,
+      rgba(63, 67, 74, 0.929),
+      #020202
+    );
+}
+
+.hw-cta-text p{
+  color: #aaaaaa;
+}
+
+.hw-cta-text {
+  position: relative; 
+  z-index: 2;
+  color: #fff;
+  padding: 2rem;
+  max-width: 50%; 
+  text-align: left; 
+}
+
+.hw-cta-image {
+  position: relative;
+  width: 40%; 
+  height: 100%; 
+  z-index: 1; 
+}
+
+.hw-cta-image img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 0 16px 16px 0; 
+  position: absolute; 
+  right: 0;
+  opacity: 0.5; 
+  -webkit-mask-image: linear-gradient(to right, transparent, black);
+  mask-image: linear-gradient(to right, transparent, black);
+}
+
+@media (max-width: 1200px) {
+  .how-it-works-container {
+    padding: 20px;
+  }
+
+  .steps-container {
+    padding: 5% 8%;
+  }
+
+  .step-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .step-content img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hw-call-to-action {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .hw-cta-text {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .hw-cta-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hw-cta-image img {
+    border-radius: 0 0 16px 16px;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works-container {
+    margin-top: 10%;
+    padding: 10px;
+  }
+
+  .how-it-works-title {
+    font-size: 2rem;
+  }
+
+  .how-it-works-description {
+    font-size: 1rem;
+  }
+
+  .timeline-circle {
+    display: none;
+  }
+
+  .steps-container {
+    padding: 5% 5%;
+  }
+
+  .step-content img{
+    width: 350px;
+    height: fit-content;
+  }
+
+  .hw-call-to-action {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .hw-cta-image {
+    height: 350px;
+  }
+
+  .hw-cta-image img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .how-it-works-title {
+    font-size: 1.5rem;
+  }
+
+  .step-content {
+    padding: 10px;
+  }
+
+  .step-content img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hw-call-to-action {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .hw-cta-text {
+    font-size: 0.9rem;
+  }
+
+  .hw-cta-image {
+    height: 120px;
+  }
+}

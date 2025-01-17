@@ -3,25 +3,43 @@ import Dropdown from "./DropDown";
 import NavbarToggle from "./NavBarToggle";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "../../LanguageContext";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 import "./Navbar.css";
 
 function Navbar() {
-  const { t } = useLanguage();  // Traslate
+  const { t } = useLanguage(); // Translate
+  const location = useLocation(); // Obtener la ubicación actual
+  const isActive = (path) => location.pathname === path;
 
   const solutionItems = [
-    { label: t("services"), icon: "/01-NavBar/senseview_isotype.png" },
-    { label: t("industrialVariables"), icon: "/01-NavBar/troubleshoot.png", isIndented: true },
-    { label: t("productionMetrics"), icon: "/01-NavBar/leaderboard.png", isIndented: true },
-    { label: t("howItWorks"), icon: "/01-NavBar/emoji_objects.png" },
-    { label: t("devices"), icon: "/01-NavBar/memory.png" },
-    { label: t("dataMetrics"), icon: "/01-NavBar/dashboard_customize.png" },
+    { label: t("services"), icon: "/01-NavBar/senseview_isotype.png", path: "/services" },
+    { label: t("industrialVariables"), icon: "/01-NavBar/troubleshoot.png", isIndented: true, path: "/services/industrial-variables" },
+    { label: t("productionMetrics"), icon: "/01-NavBar/leaderboard.png", isIndented: true, path: "/services/production-metrics" },
+    { label: t("howItWorks"), icon: "/01-NavBar/emoji_objects.png", path: "/how-it-works" },
+    { label: t("devices"), icon: "/01-NavBar/memory.png", path: "/services/devices" },
+    { label: t("dataMetrics"), icon: "/01-NavBar/dashboard_customize.png", path: "/services/data-metrics" },
   ];
 
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  // Manejar clics fuera de los dropdowns
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".dropdown-solutions") && isSolutionsDropdownOpen) {
+        setIsSolutionsDropdownOpen(false);
+      }
+      if (!event.target.closest(".language-selector") && isLanguageDropdownOpen) {
+        setIsLanguageDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [isSolutionsDropdownOpen, isLanguageDropdownOpen]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,6 +57,11 @@ function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Mover al inicio de la página al cambiar de ruta
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplazarse al inicio
+  }, [location]);
+
   const toggleSolutionsDropdown = () =>
     setIsSolutionsDropdownOpen(!isSolutionsDropdownOpen);
   const toggleLanguageDropdown = () =>
@@ -47,7 +70,6 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
     if (isMenuOpen) setIsSolutionsDropdownOpen(false);
   };
-
 
   return (
     <nav className="navbar">
@@ -65,14 +87,21 @@ function Navbar() {
               isMenuOpen={isMenuOpen}
             />
           </li>
-          <li className="bold-on-hover"><Link to="/pricing">{t("pricing")}</Link></li>
-          <li className="bold-on-hover"> <Link to="/faq">{t("faq")}</Link></li>
-          <li className="bold-on-hover"><Link to="/contact">{t("contact")}</Link></li>
-          <li className="bold-on-hover"> <Link to="/about">{t("aboutUs")}</Link></li>
+          <li className={isActive("/pricing") ? "active" : ""}>
+            <Link to="/pricing">{t("pricing")}</Link>
+          </li>
+          <li className={isActive("/faq") ? "active" : ""}>
+            <Link to="/faq">{t("faq")}</Link>
+          </li>
+          <li className={isActive("/contact") ? "active" : ""}>
+            <Link to="/contact">{t("contact")}</Link>
+          </li>
+          <li className={isActive("/about") ? "active" : ""}>
+            <Link to="/about">{t("aboutUs")}</Link>
+          </li>
         </ul>
       </div>
       <LanguageSelector
-      
         isOpen={isLanguageDropdownOpen}
         toggleLanguageDropdown={toggleLanguageDropdown}
         languages={[

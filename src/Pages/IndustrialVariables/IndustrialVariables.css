@@ -1,0 +1,195 @@
+.industrial-variables-container {
+  background: 
+    linear-gradient(
+      to top,
+      rgba(33, 33, 33, 1), /* Fondo negro intenso en la parte inferior */
+      rgba(33, 33, 33, 0.8),
+      rgba(23, 42, 79, 0.5) 100% /* Más claro hacia la parte superior */
+    ),
+    url('/public/06-Service01/Headline Image/Variables Industriales.webp') no-repeat center/cover;
+}
+
+/* section 2 */
+.description-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 65px 120px;
+  color: white;
+  background-color: rgba(33, 33, 33, 255); 
+  border-bottom: 1px solid black;
+}
+
+.description-left {
+  width: 40%;
+}
+
+.description-right-description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; 
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b3b3b3; 
+}
+
+.description-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.description-title .highlight {
+  color: #00a5cf;
+}
+
+.description-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d1d1d1; 
+}
+
+.feature-description {
+  display: flex;
+  background: #333; 
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  position: relative;
+  margin-bottom: 50px; 
+  width: 300px;
+  height: 60px;
+}
+
+.feature-icon-description {
+  width: 100px; 
+  height: 100px;
+  background-color: #00a5cf; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -35px;
+  top: 1px; 
+}
+
+.feature-icon-description img {
+  width: 65px; 
+  height: 65px;
+}
+
+.feature-text-description {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+  font-weight: 500; 
+  padding-left: 33%;
+  padding-right: 5%;
+  text-align: left;
+  margin-top: -1%;
+}
+
+/* Section 3 */
+
+
+/* General Responsive Adjustments */
+@media (max-width: 1200px) {
+  .description-section {
+    padding: 50px 80px; /* Reducir padding para pantallas medianas */
+  }
+  .description-left {
+    width: 50%; /* Más ancho para pantallas medianas */
+  }
+  .description-right {
+    gap: 20px; /* Reducir el espacio entre elementos */
+  }
+  .feature-description {
+    width: 280px; /* Ajustar el ancho de los elementos */
+  }
+}
+
+@media (max-width: 992px) {
+  .description-section {
+    flex-direction: column; /* Cambiar a disposición en columna */
+    padding: 40px 20px;
+    align-items: center;
+  }
+  .description-left,
+  .description-right {
+    width: 100%; /* Ocupan todo el ancho */
+  }
+  .feature-description {
+    width: 90%; /* Asegurarse de que quepan en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .industrial-variables-container {
+    margin-top: 10%;
+    padding: 20px;
+    min-height: 40vh; /* Reducir altura mínima */
+  }
+  .title {
+    font-size: 2rem; /* Tamaño reducido de títulos */
+  }
+  .description {
+    font-size: 1rem; /* Ajustar texto descriptivo */
+  }
+  .monitoring-grid {
+    margin-left: 5%; /* Reducir márgenes horizontales */
+    margin-right: 5%;
+  }
+  .monitoring-item {
+    flex: 1 1 calc(50% - 10px); /* 2 elementos por fila */
+    max-width: calc(50% - 10px);
+  }
+  .description-right{
+    margin-left: 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .description-section {
+    padding: 20px 10px; /* Reducir padding general */
+  }
+  .monitoring-item {
+    flex: 1 1 100%; /* 1 elemento por fila */
+    max-width: 100%;
+  }
+  .content-monitoring {
+    padding: 10px; /* Reducir padding interno */
+  }
+  .icon-container {
+    padding: 30px; /* Ajustar espaciado para iconos */
+  }
+  .feature-description {
+    width: 100%; /* Usar todo el ancho */
+    height: auto; /* Ajustar altura automáticamente */
+  }
+}
+
+/* Specific adjustments for very small screens */
+@media (max-width: 375px) {
+  .breadcrumb {
+    flex-wrap: wrap; /* Permitir múltiples líneas si es necesario */
+    font-size: 0.9rem; /* Reducir tamaño de texto */
+  }
+  .title {
+    font-size: 1.8rem; /* Más pequeño para pantallas pequeñas */
+  }
+  .description {
+    font-size: 0.9rem;
+  }
+  .feature-text-description {
+    font-size: 0.8rem; /* Reducir texto de las características */
+  }
+  
+}

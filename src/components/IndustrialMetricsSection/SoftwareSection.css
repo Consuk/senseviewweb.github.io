@@ -1,0 +1,204 @@
+.software-section {
+  padding-top: 10%;
+  background-color: #ffffff;
+}
+
+.software-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+
+}
+
+.software-header h4 {
+  font-size: 1rem;
+  color: #888;
+}
+
+.software-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.software-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.software-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+
+  margin-bottom: 2rem;
+}
+
+.software-description {
+  flex: 1;
+  padding: 1rem;
+}
+
+.software-description h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.software-description p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.software-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.software-laptop {
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+.software-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.software-footer-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.software-tablet {
+  max-width: 70%;
+  border-radius: 8px;
+}
+
+.software-footer-description {
+  flex: 1;
+  padding: 1rem;
+}
+
+.software-footer-description h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.software-footer-description p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .software-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .software-images,
+  .software-footer-images {
+    margin-top: 1rem;
+  }
+
+  .software-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .software-description p {
+    font-size: 0.95rem;
+  }
+
+  .software-laptop,
+  .software-tablet {
+    max-width: 100%;
+  }
+
+  .software-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .software-footer-description {
+    text-align: center;
+  }
+
+  .software-footer-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .software-footer-description p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .software-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .software-description h3 {
+    font-size: 1.3rem;
+  }
+
+  .software-description p {
+    font-size: 0.9rem;
+  }
+
+  .software-footer-description h3 {
+    font-size: 1.3rem;
+  }
+
+  .software-footer-description p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .software-section {
+    padding: 5%;
+  }
+
+  .software-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .software-content,
+  .software-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .software-description h3 {
+    font-size: 1.2rem;
+  }
+
+  .software-description p {
+    font-size: 0.85rem;
+  }
+
+  .software-footer-description h3 {
+    font-size: 1.2rem;
+  }
+
+  .software-footer-description p {
+    font-size: 0.85rem;
+  }
+
+  .software-laptop,
+  .software-tablet {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
